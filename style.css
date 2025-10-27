@@ -1,0 +1,102 @@
+body{background-image: url(https://cdn.glitch.me/6f144445-b29e-428c-9c62-f4c1be422a2a%2Fparty.jpeg?v=1633902905294);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:800px;
+    background-color:#F4D19B ;
+}
+#container{
+    background-color:rgba(205, 238, 157, 0.78) ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:600px;
+    color:black;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin:30px;
+    padding:5px;
+    margin-top:1px;
+}
+h1{
+    align-self: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 40px;
+    color:#FD6F96 ;
+    margin-top: 5px;
+}
+#choose{
+    align-self: center;
+    font-family: 'EB Garamond', serif;
+    font-size:25px;
+    color: #FD6F96;
+    margin-top:3px;
+}
+#btn{
+    background-color: #FD6F96;
+    border:none;
+    border-radius: 5px;
+    padding:5px;
+    font-family: 'EB Garamond', serif;
+    font-size: 14px;
+}
+#btnNow{
+    background-color: #FD6F96;
+    border:none;
+    padding:5px;
+    width:100px;
+    align-self: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+}
+#package,#meal,#events{
+    font-family: 'Scheherazade New', serif;
+    font-size: 15px;
+}
+#tips{
+    font-family: 'Scheherazade New', serif;
+    display:none;
+    
+}
+#box{
+    display: flex;
+    justify-content: center;
+}
+#amountPerChild, #totalTip, #totalAmount{
+    background-color:rgba(60, 141, 5, 0.5);
+    margin:35px;
+    padding:18px;
+    width:50px;
+}
+#amount{
+    font-family: 'Scheherazade New', serif;
+    color:black;
+}
+#inputText{
+    width:510px
+}
+
+@media all and ( max-width: 800px ) {
+    #container{
+        width:650px;
+        margin-left:15px;
+    }
+}
+@media all and ( max-width: 500px ) {
+    #container{
+        width:340px;
+    
+    }
+    form{
+        width:270px;
+    }
+    #amountPerChild, #totalTip, #totalAmount{
+        width:40px;
+        margin:10px;
+    }
+    
+    
+
+}

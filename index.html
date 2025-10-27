@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Birthday party</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div id="container">
+         <h1>Play day</h1>
+         <p id="choose">Pick your all you can play package
+         <p>
+         <form>
+            <select id="package">
+               <option>Select package</option>
+               <option value="7.99">$ 7.99 per child (60 min)</option>
+               <option value="9.99">$ 9.99 per child (90 min)</option>
+               <option value="11.99">$ 11.99 per child (120 min)</option>
+            </select>
+            <p id="amount">How many kids?</p>
+            <input id="people" type="text" placeholder=""><br>
+            <select id="meal">
+               <option>food selection</option>
+               <option value="17.49">$17.49 1 large pizza</option>
+               <option value="34.98">$34.98 2 large pizza </option>
+               <option value="52.47">$52.47 3 large pizza </option>
+            </select>
+            <br>
+            <select id="events">
+               <option> Add an extra fun</option>
+               <option value="9.0"> $9 Bumper cars </option>
+               <option value="10.0"> $10 Bowling </option>
+               <option value="9.0">$9 Glo golf</option>
+               <option value="11.0">$11 Laser tag</option>
+            </select>
+            <br>
+            <button id="btn">Add a tip</button><br>
+            <select id="tips">
+               <option disabled>select an option</option>
+               <option value="0.25">25% Thank you!!!</option>
+               <option value="0.20">20% Thank you!!!</option>
+               <option value="0.15">15% Thank you</option>
+               <option selected value="">No tips</option>
+            </select>
+            <br>
+            <button id="btnNow">Book now</button>
+         </form>
+         <div id="box">
+            <div id="amountPerChild">
+               <p>Amount</p>
+               <span>$</span>
+               <span id="dividedBill"></span>
+               <span>per child</span>
+            </div>
+            <div id="totalTip">
+               <p>Tips</p>
+               <span>$</span>
+               <span id="dividedTip"></span>
+            </div>
+            <div id="totalAmount">
+               <p>Total bill</p>
+               <span>$</span>
+               <span id="billAndTip"></span>  
+            </div>
+         </div>
+      </div>
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+      <script src="script.js"></script>
+   </body>
+</html>
